@@ -1,4 +1,7 @@
 *.ovpn*
 *.ctb~*
 *rockyou.txt
+*rockyou.tar.gz
 *best-dns-wordlist.txt
+*best-dns-wordlist.tar.gz
+Wordlists/DNS/best-dns-wordlist.tar.gz
