@@ -1,0 +1,24 @@
+echo -n $i " ";echo -n $i | sha1sum;done > teste#!/bin/bash
+echo "[*] Decrypt Password Hash"
+echo "[*] By: Gabriel"
+
+list=$1
+hash=$2
+typeHash=$3
+
+if [ "$list" == "" ] || [ "$hash" == "" ] || [ "$typeHash" == "" ]
+then
+	echo "[-] Por favor selecione uma wordlist e um hash e o tipo do hash para que seja possivel concluir o processamento"
+	echo "[-] Exemplo: decryptHash.sh passw.txt 291383274824131031ksdmfjih md5"
+else
+	echo "[+] Aguarde..."
+	for i in $(cat $list);
+	do
+		echo -n $i " ";echo -n $i | $typeHash > passHash.txt
+	doneresult=$(grep $hash passHash.txt);
+	
+	if [ "$result" == "" ]
+	then
+		echo "[-] Não foi possivel encontrar a senha, escolha outra wordlist"
+	else
+		ech
